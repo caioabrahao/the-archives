@@ -1,5 +1,7 @@
 ---
 import Header from '../components/Header.astro'
+
+const pageTitle = 'Home'
 ---
 
 <!DOCTYPE html>
@@ -7,14 +9,14 @@ import Header from '../components/Header.astro'
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index</title>
+	<title>{ pageTitle }</title>
 	<link rel="stylesheet" href="/src/styles/styles.css">
 </head>
 <body>
 	<Header></Header>
 	
 	<section class="section">
-		<h1 class="title">Hello World!</h1>
+		<h1 class="title">{ pageTitle }</h1>
 		<p class="subtitle">This is an Astro app</p>
 	</section>
 </body>
