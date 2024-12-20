@@ -1,0 +1,39 @@
+---
+import Socials from './Socials.astro'
+---
+
+
+<footer class="footer">
+    <p>Created by Caio Abrahão!</p>
+    <div class="socials">
+        <Socials platform="github" link="https://github.com/caioabrahao"></Socials>
+        <Socials platform="linkedin" link="https://github.com/caioabrahao"></Socials>
+        <Socials platform="instagram" link="https://github.com/caioabrahao"></Socials>
+    </div>
+    
+</footer>
+
+<style>
+.socials{
+    display: flex;
+    gap: 32px;
+
+    padding: 8px 16px;
+    border: white solid 1px;
+    border-radius: 90px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    background-color: #161616;
+    color: white;
+    padding: 1rem 3rem;
+
+    position: absolute;
+    width: 100%;
+}
+
+</style>

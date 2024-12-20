@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
 
 const pageTitle = 'Home'
 ---
@@ -10,7 +11,7 @@ const pageTitle = 'Home'
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{ pageTitle }</title>
-	<link rel="stylesheet" href="/src/styles/styles.css">
+	<link rel="stylesheet" href="/src/styles/global.css">
 </head>
 <body>
 	<Header></Header>
@@ -19,6 +20,8 @@ const pageTitle = 'Home'
 		<h1 class="title">{ pageTitle }</h1>
 		<p class="subtitle">This is an Astro app</p>
 	</section>
+
+	<Footer></Footer>
 </body>
 </html>
 

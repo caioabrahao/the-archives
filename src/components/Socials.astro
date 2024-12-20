@@ -1,0 +1,24 @@
+---
+const { platform, link } = Astro.props;
+---
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<a href={ link }>
+    <i class={`ri-${platform}-fill`}></i>
+</a>
+
+
+
+<style>
+    a{
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    a:hover{
+        color: #0070f3;
+    }
+</style>
