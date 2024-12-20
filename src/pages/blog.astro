@@ -1,0 +1,40 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+---
+
+<BaseLayout>
+    <section class="section">
+        <img class="blog-image" src="https://images.inc.com/uploaded_files/image/1024x576/getty_1035462384_395932.jpg" alt="person writing on a notebook" />
+        <div class="text">
+            <h1>THE BLOG</h1>
+            <p>Read about my journey and learnings</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="post-list">
+            <ul>
+                <li><a href="/src/pages/posts/post-1.md">Post 1</a></li>
+            </ul>
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .section{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section .text{
+        text-align: right;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .blog-image {
+        width: 50%;
+        border-radius: 50px;
+    }
+</style>
