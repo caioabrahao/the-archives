@@ -1,10 +1,5 @@
----
-import Hamburger from "./Hamburger.astro"
----
-
-
 <header class="header">
-    <Hamburger></Hamburger>
+    <p class="logo">the archives</p>
     <nav>
         <ul>
             <li><a href="/">Home</a></li>
@@ -15,26 +10,30 @@ import Hamburger from "./Hamburger.astro"
 </header>
 
 <style>
-.header{
-    display: flex;
-    justify-content: flex-end;
-    background-color: #161616;
-    color: white;
-    padding: 1rem 3rem;
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
 
-    position: absolute;
-    width: 100%;
-}
-.header nav a{
-    color: inherit;
-    text-decoration: none;
-}
-.header nav ul{
-    list-style: none;
-    display: flex;
-    gap: 64px;
-    align-items: center;
-}
+        position: absolute;
+        width: 100%;
+    }
 
+    .logo {
+        font-size: 1.5rem;
+    }
 
+    nav ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
 </style>
