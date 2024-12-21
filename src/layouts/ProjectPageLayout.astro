@@ -1,0 +1,52 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import Button from "../components/atoms/Button.astro";
+const { frontmatter, content } = Astro.props;
+---
+
+<BaseLayout title="Blog Post">
+    <section class="section project-post">
+    <article class="article">
+        <div class="info">
+            <h1>{ frontmatter.title }</h1>
+            <p>{ frontmatter.description }</p>
+            <p>{ frontmatter.technologies }</p>
+            <div class="buttons">
+                <Button link="#" label="PREVIEW"></Button>
+                <Button link="#" label='GITHUB REPO'></Button>
+            </div>
+        </div>
+        
+        <div class="content">
+            <slot></slot>
+        </div>
+        
+    </article>
+    </section>
+    
+</BaseLayout>
+
+<style>
+    .project-post{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+        min-height: 100vh;
+        height: auto;
+        padding: 10% var(--page-padding);
+    }
+
+    .article{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 2rem;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+</style>

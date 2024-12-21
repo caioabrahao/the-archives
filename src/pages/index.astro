@@ -10,15 +10,11 @@ import Button from "../components/atoms/Button.astro"
             <p>Caio Abrahão's Project Dump Website</p>
             <p style="color: red; font-size: 1rem;">IM STILL MAKING THIS SITE, SO IT STILL LOOKS A BIT TRASH</p>
         </div>
-        <Button link="/projects" label="VIEW PROJECTS"></Button>
-    </section>
-
-    <section class="section">
-        <div class="text">
-            <h2>CHECK MY BLOG!</h2>
-            <p>Read about my journey and learnings</p>
+        <div class="buttons">
+            <Button link="/projects" label="VIEW PROJECTS"></Button>
+            <Button link="/blog" label="ALSO, CHECK THE BLOG!"></Button>
         </div>
-        <Button link="/blog" label="READ TEH BLOG"></Button>
+        
     </section>
 </BaseLayout>
 
@@ -34,5 +30,11 @@ import Button from "../components/atoms/Button.astro"
 
     p {
         font-size: 1.5rem;
+    }
+
+    .buttons{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
     }
 </style>

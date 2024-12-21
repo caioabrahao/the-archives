@@ -2,7 +2,7 @@
 const { link = '#', label = 'Button' } = Astro.props;
 ---
 
-<a class="button" href={link}>{ label }</a>
+<a class={link === '#' ? 'button disabled' : 'button'} href={link}>{ label }</a>
 
 
 <style>
@@ -19,5 +19,16 @@ const { link = '#', label = 'Button' } = Astro.props;
 
 .button:hover {
     transform: translateY(-2px);
+}
+
+.disabled{
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 90px;
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    display: inline-block;
+    width: fit-content;
 }
 </style>
