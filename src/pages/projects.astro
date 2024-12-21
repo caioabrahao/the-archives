@@ -7,11 +7,35 @@ import ProjectCard from "../components/ProjectCard.astro"
     <section class="section projects">
         <h1>Projects</h1>
         <div class="project-grid">
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
-            <ProjectCard></ProjectCard>
+            <ProjectCard 
+            title="Design Portfolio Website" 
+            description="All the versions of my design focused Portfolio showcase website"></ProjectCard>
+            
+            <ProjectCard 
+            title="GSAP Learn" 
+            description="One of those quick learning projects to learn Green Sock Animation Platform (GSAP)"></ProjectCard>
+        
+            <ProjectCard 
+            title="First Ever Portfolio" 
+            description="The first website I made during a Web Development Course"></ProjectCard>
+
+            <ProjectCard 
+            title="ThreeJS Render Frame" 
+            description="A project i made to learn Three.js"></ProjectCard>
+
+            <ProjectCard 
+            title="JS Labs" 
+            description="My JavaScript playground i made back when i started with JS"></ProjectCard>
+
+            <ProjectCard 
+            title="Flaskers" 
+            description="I had to learn Flask in a week for a college project. Flaskers was the monster i created"></ProjectCard>
+        
+            <ProjectCard 
+            title="SerasaBET" 
+            description="A fictitious betting website, made as part of a college project"></ProjectCard>
+
+
         </div>
         
     </section>
@@ -23,6 +47,7 @@ import ProjectCard from "../components/ProjectCard.astro"
         justify-content: center;
         gap: 2rem;
         min-height: 100vh;
+        height: auto;
         padding: 10%;
     }
 
